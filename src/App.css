@@ -1,0 +1,322 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN */
+.main{
+    width:100%;
+    background:#f4f7fb;
+}
+
+/* HOME */
+.home{
+    width:100%;
+}
+
+/* NAVBAR */
+.nav{
+    height:12vh;
+    width:100%;
+
+    background:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 40px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* LOGO */
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#1e3a8a;
+
+    display:flex;
+    align-items:center;
+}
+
+/* NAV LINKS */
+.container{
+    display:flex;
+    align-items:center;
+    gap:50px;
+
+    list-style:none;
+}
+
+.container li{
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:600;
+    color:#333;
+}
+
+.container li:hover{
+    color:#1e3a8a;
+}
+
+/* BUTTON */
+.container button{
+    padding:12px 24px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#1e3a8a;
+    color:white;
+
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.container button:hover{
+    background:#162d68;
+}
+
+/* MARQUEE */
+.marquee{
+    width:90%;
+    min-height:70px;
+
+    margin:40px auto;
+
+    background:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+    font-weight:bold;
+    color:#1e3a8a;
+}
+
+/* MORE INFO */
+.moreinfor{
+    width:90%;
+
+    margin:50px auto;
+
+    display:flex;
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+/* RIGHT */
+.right{
+    flex:1;
+    min-width:300px;
+    min-height:500px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    padding:40px;
+}
+
+/* LEFT */
+.left{
+    flex:1;
+    min-width:300px;
+    min-height:500px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+}
+
+.left h1{
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+.left p{
+    line-height:1.8;
+    color:#555;
+}
+
+/* SOCIAL */
+.social{
+    width:90%;
+
+    margin:50px auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    padding:50px 20px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    gap:20px;
+}
+
+/* MISSION */
+.mission{
+    width:90%;
+
+    margin:50px auto;
+}
+
+/* TITLE */
+.mission h1{
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:#1e3a8a;
+}
+
+/* GOALS */
+.Goals{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+/* CARDS */
+.love,
+.joy,
+.faith{
+    width:320px;
+    min-height:350px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    padding:30px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    transition:0.3s;
+}
+
+/* HOVER */
+.love:hover,
+.joy:hover,
+.faith:hover{
+    transform:translateY(-10px);
+}
+
+/* CARD TITLES */
+.love h2,
+.joy h2,
+.faith h2{
+    margin-bottom:20px;
+
+    color:#1e3a8a;
+}
+
+/* CARD TEXT */
+.love p,
+.joy p,
+.faith p{
+    line-height:1.7;
+    color:#555;
+}
+
+/* BLOG */
+.blog{
+    width:90%;
+    min-height:400px;
+
+    margin:50px auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+.blog{
+    width:100%;
+    padding:50px 20px;
+
+    background:#f4f7fb;
+
+    display:flex;
+    justify-content:center;
+}
+
+.find{
+    width:90%;
+    max-width:1000px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#1e3a8a;
+    color:white;
+
+    padding:15px;
+}
+
+td{
+    text-align:center;
+    padding:20px;
+
+    border-bottom:1px solid #ddd;
+}
+
+a{
+    text-decoration:none;
+    color:#1e3a8a;
+    font-weight:bold;
+}
+
+a:hover{
+    color:#0f172a;
+}
