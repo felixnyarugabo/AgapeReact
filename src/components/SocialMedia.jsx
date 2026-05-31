@@ -1,28 +1,51 @@
-import React from "react";
+import { useEffect, useState } from "react";
+// import "./SocialMedia.css";
+
 
 function SocialMedia() {
+  const messages = [
+    "Welcome to our church family 🌿 May God fill your heart with peace and joy.",
+    "You are not here by accident 🙏 God has a purpose for your life.",
+    "May your faith grow stronger today and your worries be replaced with hope ✨",
+    "God loves you deeply ❤️ You are welcome in His house of grace.",
+    "Be encouraged today 💛 This is a place of healing, love, and restoration.",
+    "May the Lord bless you and keep you as you worship with us today 🙌",
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % messages.length);
+    }, 9000);
+
+    return () => clearInterval(interval);
+  }, [index]);
+
   return (
     <div className="social">
+
+      {/* WELCOME */}
       <section className="welcome">
+
         <h3>
-          Welcome to our church, a place of faith, hope, <br /> and love in
-          Jesus Christ. We are glad you are here to worship with us. <br /> May
-          you feel God’s presence, peace, and joy. <br /> We invite you to grow
-          spiritually, connect with others, <br />
-          and experience the transforming power of God’ <br />s Word today.
+          {messages[index]}
         </h3>
+
       </section>
+
+      {/* LOCATION */}
       <section className="location">
+
         <h2>📍 Church Location</h2>
 
         <p>
-          Our church is located in{" "}
-          <strong>Omoja 3, Kwamaji, Nairobi, Kenya</strong>, alongside{" "}
-          <strong>P.C.A Church</strong>.
+          Omoja 3, Kwamaji, Nairobi, Kenya opposite
+          <strong> P.C.A Church</strong>
         </p>
 
-        <span className="small-text">Easy to find • Everyone is welcome</span>
       </section>
+
     </div>
   );
 }

@@ -1,9 +1,12 @@
 import React from 'react'
 import Marquee from './Marquee'
-import MoreInfor from './MoreInfor'
 import SocialMedia from './SocialMedia'
+import MoreInfor from './MoreInfor'
 import OurMision from '../OurMision'
-import BlogLastPage from './BlogLastPage'
+import BlogLastPage from '../pages/BlogLastPage'
+
+
+
 
 function Homepage() {
   return (
@@ -12,6 +15,7 @@ function Homepage() {
         <SocialMedia/>
          <MoreInfor/>
        <OurMision/>
+  
        <BlogLastPage/>
     </div>
   )
